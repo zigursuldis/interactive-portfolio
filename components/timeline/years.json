@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1",
+    "description": "The COVID-19 pandemic is declared by WHO, impacting global health.",
+    "year": 2020
+  },
+  {
+    "id": "2",
+    "description": "NASA's Perseverance rover lands on Mars, beginning its exploration.",
+    "year": 2021
+  },
+  {
+    "id": "3",
+    "description": "The Tokyo 2020 Olympics are held in 2021, showcasing global athletic talent.",
+    "year": 2021
+  },
+  {
+    "id": "4",
+    "description": "The 2022 FIFA World Cup takes place in Qatar.",
+    "year": 2022
+  },
+  {
+    "id": "5",
+    "description": "James Webb Space Telescope launched and begins operations, offering new views of the universe.",
+    "year": 2021
+  },
+  {
+    "id": "6",
+    "description": "The Summer Universiade 2021 is held in Chengdu, China.",
+    "year": 2021
+  },
+  {
+    "id": "7",
+    "description": "The 2022 Winter Olympics take place in Beijing, China.",
+    "year": 2022
+  },
+  {
+    "id": "8",
+    "description": "NASA's Artemis I mission is launched, marking the return to lunar exploration.",
+    "year": 2022
+  },
+  {
+    "id": "9",
+    "description": "Elon Musk completes the acquisition of Twitter.",
+    "year": 2022
+  },
+  {
+    "id": "10",
+    "description": "A record-breaking heatwave in North America leads to significant weather changes.",
+    "year": 2021
+  },
+  {
+    "id": "11",
+    "description": "The James Webb Space Telescope captures its first images, providing new insights into space.",
+    "year": 2022
+  },
+  {
+    "id": "12",
+    "description": "The 2021 Cop26 Climate Change Conference takes place in Glasgow.",
+    "year": 2021
+  },
+  {
+    "id": "13",
+    "description": "The first successful powered flight on Mars is conducted by NASA's Ingenuity helicopter.",
+    "year": 2021
+  },
+  {
+    "id": "14",
+    "description": "The global release of the highly anticipated video game, 'Elden Ring'.",
+    "year": 2022
+  },
+  {
+    "id": "15",
+    "description": "A significant archaeological discovery is made in Egypt, unveiling ancient artifacts.",
+    "year": 2022
+  }
+]
