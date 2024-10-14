@@ -1,6 +1,6 @@
 import Banner from "@/components/banner";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import Timeline from "@/components/timeline/timeline";
 
 export default function Home() {
