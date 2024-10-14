@@ -33,7 +33,9 @@ export default function Timeline() {
 
   return (
     <section>
-      <h3 className="text-xl">About me</h3>
+      <h3 className="text-xl font-departure-mono" id="about_me">
+        About me
+      </h3>
       <div className="w-full bg-border-light h-[1px] mt-2 text-2xl"></div>
       <div className="flex flex-col items-center justify-between h-[300px] lg:h-[400px] bg-bg-secondary mt-5">
         <Achievement year={activeYear} />

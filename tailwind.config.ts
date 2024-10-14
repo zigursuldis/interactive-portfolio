@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        "departure-mono": ["var(--font-departure-mono)"],
+      },
       colors: {
         "bg-primary": "#282725",
         "bg-secondary": "#343330",
