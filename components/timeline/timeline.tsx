@@ -9,8 +9,7 @@ import useElementCoordinates from "./hooks/useElementCoordinates";
 
 export default function Timeline() {
   const yearsContainerRef = useRef(null);
-  const { xOffset: pinXOffset, isDraggingFromRef: isDragging } =
-    usePinClickAndDrag(yearsContainerRef);
+  const { xOffset: pinXOffset } = usePinClickAndDrag(yearsContainerRef);
   const refCoordinates = useElementCoordinates(yearsContainerRef);
 
   const activeYear = useMemo(() => {
