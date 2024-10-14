@@ -10,6 +10,8 @@ const geistMono = localFont({
 const departureMono = localFont({
   src: "./fonts/DepartureMono-Regular.woff2",
   variable: "--font-departure-mono",
+  preload: true,
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-bg-primary text-text-primary">
       <body
-        className={`${departureMono.variable} ${geistMono.variable} antialiased scroll-smooth`}
+        className={`${departureMono.variable} ${geistMono.variable} antialiased !scroll-smooth`}
       >
         {children}
       </body>
