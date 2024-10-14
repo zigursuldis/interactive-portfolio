@@ -3,10 +3,9 @@ import { TimelineYear } from "@/types";
 interface PinProps {
   xOffset: number;
   activeYear: TimelineYear;
-  isDragging: boolean;
 }
 
-export default function Pin({ xOffset, activeYear, isDragging }: PinProps) {
+export default function Pin({ xOffset, activeYear }: PinProps) {
   return (
     <div
       className="w-[2px] h-8 bg-white absolute left-0 bottom-0 cursor-pointer select-none"

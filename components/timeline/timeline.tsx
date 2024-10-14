@@ -41,11 +41,7 @@ export default function Timeline() {
         <Achievement year={activeYear} />
         <div className="relative mt-10" ref={yearsContainerRef}>
           <Years years={timelineYears} activeYear={activeYear} />
-          <Pin
-            xOffset={pinXOffset}
-            activeYear={activeYear}
-            isDragging={isDragging}
-          />
+          <Pin xOffset={pinXOffset} activeYear={activeYear} />
         </div>
       </div>
       <div className="flex justify-center items-center opacity-75 text-sm mt-1 mb-8">
