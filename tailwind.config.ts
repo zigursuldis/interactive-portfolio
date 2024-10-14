@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {},
       colors: {
         "bg-primary": "#282725",
         "bg-secondary": "#343330",

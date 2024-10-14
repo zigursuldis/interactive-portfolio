@@ -9,12 +9,12 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
   useEffect(() => {
     const handleMouseDown = (event: MouseEvent) => {
       if (
-        event.clientX >= refCoordinates.x &&
-        event.clientX <= refCoordinates.x2 &&
-        event.clientY >= refCoordinates.y &&
-        event.clientY <= refCoordinates.y2
+        event.pageX >= refCoordinates.x &&
+        event.pageX <= refCoordinates.x2 &&
+        event.pageY >= refCoordinates.y &&
+        event.pageY <= refCoordinates.y2
       ) {
-        setXOffset(event.clientX - refCoordinates.x);
+        setXOffset(event.pageX - refCoordinates.x);
         setIsDraggingFromRef(true);
       }
     };
@@ -29,12 +29,12 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
 
     const handleMouseMove = (event: MouseEvent) => {
       if (isDraggingFromRef) {
-        if (event.clientX < refCoordinates.x) {
+        if (event.pageX < refCoordinates.x) {
           setXOffset(0);
-        } else if (event.clientX + 2 > refCoordinates.x2) {
+        } else if (event.pageX + 2 > refCoordinates.x2) {
           setXOffset(refCoordinates.x2 - refCoordinates.x - 2); //-2px so pin doesn't go outside container (2px pin width)
         } else {
-          setXOffset(event.clientX - refCoordinates.x);
+          setXOffset(event.pageX - refCoordinates.x);
         }
       }
     };
@@ -42,12 +42,12 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
     const handleTouchMove = (event: TouchEvent) => {
       const touch = event?.changedTouches?.[0];
       if (isDraggingFromRef && touch) {
-        if (touch.clientX < refCoordinates.x) {
+        if (touch.pageX < refCoordinates.x) {
           setXOffset(0);
-        } else if (touch.clientX + 2 > refCoordinates.x2) {
+        } else if (touch.pageX + 2 > refCoordinates.x2) {
           setXOffset(refCoordinates.x2 - refCoordinates.x - 2);
         } else {
-          setXOffset(touch.clientX - refCoordinates.x);
+          setXOffset(touch.pageX - refCoordinates.x);
         }
       }
     };
@@ -55,12 +55,12 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
     const handleTouchStart = (event: TouchEvent) => {
       const touch = event?.changedTouches?.[0];
       if (
-        touch.clientX >= refCoordinates.x &&
-        touch.clientX <= refCoordinates.x2 &&
-        touch.clientY >= refCoordinates.y &&
-        touch.clientY <= refCoordinates.y2
+        touch.pageX >= refCoordinates.x &&
+        touch.pageX <= refCoordinates.x2 &&
+        touch.pageY >= refCoordinates.y &&
+        touch.pageY <= refCoordinates.y2
       ) {
-        setXOffset(touch.clientX - refCoordinates.x);
+        setXOffset(touch.pageX - refCoordinates.x);
         setIsDraggingFromRef(true);
       }
     };
@@ -87,7 +87,6 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
       };
     }
   }, [ref, refCoordinates, isDraggingFromRef]);
-  useEffect(() => {}, []);
 
   return { xOffset, isDraggingFromRef, refCoordinates };
 }

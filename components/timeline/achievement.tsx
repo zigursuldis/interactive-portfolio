@@ -8,10 +8,10 @@ export default function Achievement({ year }: AchievementProps) {
   return (
     //for animation, provide key so component actually is remounted
     <h3
-      className="flex justify-center items-center mt-10 lg:mt-20 mx-4 lg:mx-8 animate-fall"
-      key={year.id}
+      className="flex text-xl justify-center items-center mt-10 lg:mt-20 mx-4 lg:mx-8 animate-fall text-center"
+      key={year?.id}
     >
-      {year.description}
+      {year?.description}
     </h3>
   );
 }
