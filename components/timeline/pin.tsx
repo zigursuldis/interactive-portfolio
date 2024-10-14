@@ -13,11 +13,6 @@ export default function Pin({ xOffset, activeYear, isDragging }: PinProps) {
       style={{
         transform: `translateX(${xOffset}px)`,
       }}
-      onDragStart={(e) => {
-        e.preventDefault();
-        return false;
-      }}
-      draggable={false}
     >
       <div className="absolute top-[-5px] left-[-4px] w-[10px] h-[10px] rounded-full bg-accent"></div>
       <div className="absolute top-[-2rem] left-[-1rem] opacity-75 select-none">

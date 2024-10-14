@@ -7,28 +7,17 @@ interface YearsProps {
 
 export default function Years({ years, activeYear }: YearsProps) {
   return (
-    <div
-      className="flex h-8 items-end cursor-pointer"
-      onDragStart={(e) => {
-        e.preventDefault();
-        return false;
-      }}
-      draggable={false}
-    >
+    <div className="flex h-8 items-end cursor-pointer">
       {years.map((timelineYear, index) => {
         const isLastYear = index === years?.length - 1;
         const isActiveYear = activeYear.id === timelineYear.id;
         return (
           <div
             key={timelineYear.id}
-            onDragStart={(e) => {
-              e.preventDefault();
-              return false;
-            }}
             draggable={false}
             className={`bg-white w-[2px] ${index % 2 === 0 ? "h-6" : "h-4"} ${
-              !isLastYear ? "mr-4 md:mr-8" : ""
-            } ${isActiveYear ? "opacity-90" : "opacity-40"}`}
+              !isLastYear ? "mr-4 md:mr-6" : ""
+            } ${isActiveYear ? "" : "opacity-40"}`}
           ></div>
         );
       })}
