@@ -5,5 +5,13 @@ interface AchievementProps {
 }
 
 export default function Achievement({ year }: AchievementProps) {
-  return <h3 className="mb-20 mt-10">{year.description}</h3>;
+  return (
+    //for animation, provide key so component actually is remounted
+    <h3
+      className="flex justify-center items-center mt-10 lg:mt-20 mx-4 lg:mx-8 animate-fall"
+      key={year.id}
+    >
+      {year.description}
+    </h3>
+  );
 }

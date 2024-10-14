@@ -1,6 +1,6 @@
 import { RefObject, useEffect, useState } from "react";
 import useElementCoordinates from "./useElementCoordinates";
-
+//could refactor this into two separate hooks, as it's super bloaty
 export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
   const [xOffset, setXOffset] = useState(0);
   const [isDraggingFromRef, setIsDraggingFromRef] = useState(false);
@@ -23,12 +23,16 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
       setIsDraggingFromRef(false);
     };
 
+    const handleTouchEnd = () => {
+      setIsDraggingFromRef(false);
+    };
+
     const handleMouseMove = (event: MouseEvent) => {
       if (isDraggingFromRef) {
         if (event.clientX < refCoordinates.x) {
           setXOffset(0);
         } else if (event.clientX + 2 > refCoordinates.x2) {
-          setXOffset(refCoordinates.x2 - refCoordinates.x - 2);
+          setXOffset(refCoordinates.x2 - refCoordinates.x - 2); //-2px so pin doesn't go outside container (2px pin width)
         } else {
           setXOffset(event.clientX - refCoordinates.x);
         }
@@ -62,13 +66,16 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
     };
 
     if (ref.current && window) {
-      const timelineContainer = ref.current; //persistant reference
+      const timelineContainer = ref.current;
 
       timelineContainer.addEventListener("mousedown", handleMouseDown);
       timelineContainer.addEventListener("touchstart", handleTouchStart);
+      //attaching to window to have better UX when dragging out of the timeline component (doesnt need to reclick/redrag)
+      //given event handlers are created each useEffect
       window.addEventListener("touchmove", handleTouchMove);
       window.addEventListener("mousemove", handleMouseMove);
       window.addEventListener("mouseup", handleMouseUp);
+      window.addEventListener("touchend", handleTouchEnd);
 
       return () => {
         timelineContainer.removeEventListener("mousedown", handleMouseDown);
@@ -76,6 +83,7 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
         window.removeEventListener("touchmove", handleTouchMove);
         window.removeEventListener("mousemove", handleMouseMove);
         window.removeEventListener("mouseup", handleMouseUp);
+        window.addEventListener("touchend", handleTouchEnd);
       };
     }
   }, [ref, refCoordinates, isDraggingFromRef]);

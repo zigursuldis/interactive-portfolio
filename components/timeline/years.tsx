@@ -2,20 +2,33 @@ import { TimelineYear } from "@/types";
 
 interface YearsProps {
   years: TimelineYear[];
-  onActiveYearChange?: (year: TimelineYear) => unknown;
+  activeYear: TimelineYear;
 }
 
-export default function Years({ years }: YearsProps) {
+export default function Years({ years, activeYear }: YearsProps) {
   return (
-    <div className="flex h-8 items-end">
+    <div
+      className="flex h-8 items-end cursor-pointer"
+      onDragStart={(e) => {
+        e.preventDefault();
+        return false;
+      }}
+      draggable={false}
+    >
       {years.map((timelineYear, index) => {
         const isLastYear = index === years?.length - 1;
+        const isActiveYear = activeYear.id === timelineYear.id;
         return (
           <div
             key={timelineYear.id}
-            className={`bg-white opacity-50  w-[2px] ${
-              index % 2 === 0 ? "h-6" : "h-4"
-            } ${!isLastYear ? "mr-4 md:mr-8" : ""}`}
+            onDragStart={(e) => {
+              e.preventDefault();
+              return false;
+            }}
+            draggable={false}
+            className={`bg-white w-[2px] ${index % 2 === 0 ? "h-6" : "h-4"} ${
+              !isLastYear ? "mr-4 md:mr-8" : ""
+            } ${isActiveYear ? "opacity-90" : "opacity-40"}`}
           ></div>
         );
       })}
