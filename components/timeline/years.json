@@ -11,13 +11,8 @@
   },
   {
     "id": "3",
-    "description": "Spent every summer at the country house, learning work ethic and hard work.",
+    "description": "Spent every summer at the country house working, learning work ethic and hard work.",
     "year": 2005
-  },
-  {
-    "id": "4",
-    "description": "Started playing basketball and volleyball, but sadly neither went far.",
-    "year": 2007
   },
   {
     "id": "5",
@@ -60,13 +55,18 @@
     "year": 2021
   },
   {
+    "id": "4",
+    "description": "Temporarily Transitioned to a Full-Stack Development Role.",
+    "year": 2021
+  },
+  {
     "id": "13",
     "description": "Started helping people online with programming.",
     "year": 2022
   },
   {
     "id": "14",
-    "description": "Went on a long road trip to Spain.",
+    "description": "Went on a long road trip to Spain. What a trip!",
     "year": 2023
   },
   {

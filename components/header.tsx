@@ -15,7 +15,7 @@ export default function Header() {
           About me
         </a>
         <a
-          href="#contact"
+          href="#contact_me"
           className="text-sm md:text-base hover:text-accent-light duration-200"
         >
           Contact

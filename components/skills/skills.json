@@ -1,0 +1,33 @@
+{
+  "skills": [
+    "React.js",
+    "Typescript",
+    "Next.js",
+    "Tailwind CSS",
+    "Redux.js(RTK)",
+    "Vue.js",
+    "GraphQL",
+    "Node.js",
+    "JavaScript(ES13)",
+    "CSS3",
+    "HTML5",
+    "Sass",
+    "GIT",
+    "NPM",
+    "Jest",
+    "React Testing Library(RTL)",
+    "css-modules(scss)",
+    "micro-frontends",
+    "DRY",
+    "SOLID",
+    "SSR",
+    "SSG",
+    "ISR",
+    "accessibility",
+    "SEO",
+    "SITECORE",
+    "headless CMS",
+    "XM cloud",
+    "Vercel"
+  ]
+}
