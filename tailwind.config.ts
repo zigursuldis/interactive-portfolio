@@ -17,6 +17,12 @@ const config: Config = {
         "bg-tertiary": "#1F1F1F",
         "bg-quaternary": "#141414",
         "text-primary": "#F7F5F1",
+        primary: "#F7F5F1",
+        secondary: "#C8C6C4",
+        tertiary: "#A6A29E",
+        "neutral-light": "#ECE4DB",
+        "neutral-dark": "#8E8E93",
+        dark: "#1C1C1C",
         accent: {
           light: "#FF9A76",
           DEFAULT: "#FF6F3C",

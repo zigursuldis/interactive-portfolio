@@ -15,7 +15,7 @@ const departureMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Uldis Zigurs frontend developer portfolio",
+  title: "Uldis Zigurs",
   description: "Interactive portfolio",
   keywords: "Uldis Zigurs, Uldis Žīgurs, frontend developer, portfolio",
   openGraph: {

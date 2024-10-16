@@ -1,0 +1,85 @@
+[
+  {
+    "project_type": "Service-based, customer-facing business website",
+    "company": "Xperience",
+    "company_type": "End-to-end delivery",
+    "description": "Migrated to a headless CMS, utilizing Next.js for SSR, SSG, and ISR. Created custom drag-and-drop components for use in the CMS.",
+    "skills": [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Radix UI",
+      "TanStack Query",
+      "GraphQL",
+      "Jest",
+      "React Testing Library (RTL)",
+      "SSR",
+      "SSG",
+      "ISR",
+      "Sitecore",
+      "Headless CMS",
+      "XM Cloud",
+      "Vercel"
+    ],
+    "id": "1"
+  },
+  {
+    "project_type": "Customer-facing government web application",
+    "company": "Accenture",
+    "company_type": "End-to-end delivery",
+    "description": "Developed multi-step forms and maintained a 15-year-old codebase. Progressively migrated to a newer stack in a large team (~100 people), with a focus on data privacy and security.",
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Vue.js",
+      "C#",
+      "Node.js",
+      "CSS3",
+      "HTML5",
+      "Micro-frontends",
+      "DRY",
+      "SOLID",
+      "Azure"
+    ],
+    "id": "2"
+  },
+  {
+    "project_type": "Data analysis/analytics (internal)",
+    "company": "Accenture",
+    "company_type": "End-to-end delivery",
+    "description": "Developed data visualization components (charts, graphs, diagrams) to display large amounts of data (thousands of records) with filtering, focusing on high performance for enhanced UX.",
+    "skills": [
+      "React.js",
+      "Redux.js",
+      "JavaScript (ES13)",
+      "CSS3",
+      "HTML5",
+      "Sass",
+      "CSS Modules (SCSS)",
+      "Azure"
+    ],
+    "id": "3"
+  },
+  {
+    "project_type": "Project planning web app (internal)",
+    "company": "Accenture",
+    "company_type": "End-to-end delivery",
+    "description": "Developed a high-data (thousands of records) management tool with full CRUD functionality.",
+    "skills": [
+      "React.js",
+      "TypeScript",
+      "Redux.js (RTK)",
+      "GraphQL",
+      "JavaScript (ES13)",
+      "CSS3",
+      "HTML5",
+      "Sass",
+      "Jest",
+      "React Testing Library (RTL)",
+      "CSS Modules (SCSS)",
+      "Micro-frontends",
+      "Azure"
+    ],
+    "id": "4"
+  }
+]

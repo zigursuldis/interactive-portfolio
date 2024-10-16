@@ -15,10 +15,10 @@ export default function Header() {
           About me
         </a>
         <a
-          href="#contact_me"
+          href="#work"
           className="text-sm md:text-base hover:text-accent-light duration-200"
         >
-          Contact
+          Work
         </a>
       </nav>
     </header>

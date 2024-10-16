@@ -5,7 +5,7 @@ export default function ContactMe() {
 
       <a
         href="mailto:uldis.zigurs@outlook.com"
-        className="bg-accent text-text-primary px-2 py-1 rounded-none hover:bg-accent-dark mt-4 block"
+        className="bg-accent-dark text-text-primary px-2 py-1 rounded-none hover:translate-y-[-2px] duration-200 mt-4 block "
       >
         Contact me
       </a>

@@ -5,6 +5,7 @@
     "Next.js",
     "Tailwind CSS",
     "Redux.js(RTK)",
+    "TanStack Query",
     "Vue.js",
     "GraphQL",
     "Node.js",
@@ -28,6 +29,7 @@
     "SITECORE",
     "headless CMS",
     "XM cloud",
+    "Azure",
     "Vercel"
   ]
 }
