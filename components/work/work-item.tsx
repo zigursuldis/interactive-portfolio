@@ -1,6 +1,7 @@
 import WorkIcon from "@/icons/work-icon";
 import { WorkItem as IWorkItem } from "@/types";
 import Skill from "../skill";
+
 interface WorkItemProps {
   workItem: IWorkItem;
 }

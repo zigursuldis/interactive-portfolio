@@ -1,8 +1,6 @@
-import { SVGProps } from "react";
+import { SVGElementProps } from "@/types";
 
-type TSVGElementProps = SVGProps<SVGSVGElement>;
-
-const WorkIcon = (props: TSVGElementProps) => {
+const WorkIcon = (props: SVGElementProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
