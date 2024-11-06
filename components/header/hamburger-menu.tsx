@@ -3,7 +3,7 @@ import CloseIcon from "@/icons/close-icon";
 import MenuIcon from "@/icons/menu-icon";
 import { MouseEventHandler, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import Divider from "./divider";
+import Divider from "../divider";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
