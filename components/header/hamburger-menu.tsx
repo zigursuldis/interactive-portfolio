@@ -3,7 +3,7 @@ import CloseIcon from "@/icons/close-icon";
 import MenuIcon from "@/icons/menu-icon";
 import { MouseEventHandler, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import Divider from "../divider";
+import Divider from "@/components/divider";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function HamburgerMenu() {
       onClick={onClickOverlay}
     >
       <div
-        className="absolute right-0 bg-bg-secondary w-10/12 h-screen"
+        className="absolute right-0 bg-bg-secondary w-10/12 h-screen animate-slideInFromRight"
         ref={modalRef}
         tabIndex={0}
       >
