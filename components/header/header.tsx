@@ -1,4 +1,9 @@
-import HamburgerMenu from "@/components/header/hamburger-menu";
+import dynamic from "next/dynamic";
+
+const HamburgerMenu = dynamic(
+  () => import("@/components/header/hamburger-menu"),
+  { ssr: false }
+);
 
 export default function Header() {
   return (
