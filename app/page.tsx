@@ -1,11 +1,14 @@
+import dynamic from "next/dynamic";
 import Banner from "@/components/banner";
 import Footer from "@/components/footer";
-import Header from "@/components/header/header";
 import Timeline from "@/components/timeline/timeline";
 import Skills from "@/components/skills/skills";
 import ContactMe from "@/components/contact-me";
 import Divider from "@/components/divider";
 import Work from "@/components/work/work";
+const Header = dynamic(() => import("@/components/header/header"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
