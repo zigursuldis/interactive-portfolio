@@ -1,8 +1,9 @@
 "use client";
-import CloseIcon from "@/icons/close-icon";
-import MenuIcon from "@/icons/menu-icon";
+
 import { MouseEventHandler, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import CloseIcon from "@/icons/close-icon";
+import MenuIcon from "@/icons/menu-icon";
 import Divider from "@/components/divider";
 
 export default function HamburgerMenu() {
