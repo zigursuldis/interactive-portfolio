@@ -16,7 +16,6 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
         event.pageY >= refCoordinates.y &&
         event.pageY <= refCoordinates.y2
       ) {
-        console.log(event.pageX, refCoordinates.x);
         setXOffset(event.pageX - refCoordinates.x);
         setIsDraggingFromRef(true);
       }
@@ -27,7 +26,6 @@ export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
   const handleMouseMove = useCallback(
     (event: MouseEvent) => {
       if (isDraggingFromRef) {
-        console.log(event, refCoordinates);
         if (event.pageX < refCoordinates.x) {
           setXOffset(0);
         } else if (event.pageX + 2 > refCoordinates.x2) {

@@ -15,18 +15,17 @@ export default function Timeline() {
   const activeYear = useMemo(() => {
     const timelineWidth = refCoordinates.x2 - refCoordinates.x;
     const yearSegmentFullWidth = timelineWidth / (timelineYears.length - 1);
+    const pinSegmentOffset = pinXOffset / yearSegmentFullWidth;
+    const pinFullSegmentOffset = Math.floor(pinXOffset / yearSegmentFullWidth);
+
     if (yearSegmentFullWidth === 0 || pinXOffset > refCoordinates.x2) {
       //on initial render return first item
       return timelineYears[0];
     }
-    if (
-      pinXOffset / yearSegmentFullWidth -
-        Math.floor(pinXOffset / yearSegmentFullWidth) <=
-      0.5
-    ) {
-      return timelineYears?.[Math.floor(pinXOffset / yearSegmentFullWidth)];
+    if (pinSegmentOffset - Math.floor(pinSegmentOffset) <= 0.5) {
+      return timelineYears?.[pinFullSegmentOffset];
     } else {
-      return timelineYears?.[Math.floor(pinXOffset / yearSegmentFullWidth) + 1];
+      return timelineYears?.[pinFullSegmentOffset + 1];
     }
   }, [pinXOffset, refCoordinates]);
 

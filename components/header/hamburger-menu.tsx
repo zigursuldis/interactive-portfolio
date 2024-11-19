@@ -1,6 +1,12 @@
 "use client";
 
-import { MouseEventHandler, useEffect, useRef, useState } from "react";
+import {
+  MouseEventHandler,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { createPortal } from "react-dom";
 import CloseIcon from "@/icons/close-icon";
 import MenuIcon from "@/icons/menu-icon";
@@ -10,19 +16,21 @@ export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
-  const onClickOverlay: MouseEventHandler<HTMLDivElement> = (event) => {
-    if (event.target === event.currentTarget) {
-      setIsOpen(false);
-    }
-  };
+  const onClickOverlay: MouseEventHandler<HTMLDivElement> = useCallback(
+    (event) => {
+      if (event.target === event.currentTarget) {
+        setIsOpen(false);
+      }
+    },
+    []
+  );
 
-  const onClickNavigationContainer: MouseEventHandler<HTMLElement> = (
-    event
-  ) => {
-    if (event.target instanceof HTMLAnchorElement) {
-      setIsOpen(false);
-    }
-  };
+  const onClickNavigationContainer: MouseEventHandler<HTMLElement> =
+    useCallback((event) => {
+      if (event.target instanceof HTMLAnchorElement) {
+        setIsOpen(false);
+      }
+    }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -47,7 +55,7 @@ export default function HamburgerMenu() {
   }
 
   return (
-    <div className="p-1 ml-1 md:hidden h-8">
+    <div className="relative p-1 ml-1 md:hidden h-8 left-2">
       {isOpen ? (
         <button onClick={() => setIsOpen(!isOpen)}>
           <CloseIcon className="hover:fill-accent-dark duration-200 fill-accent" />
@@ -86,16 +94,22 @@ export default function HamburgerMenu() {
                   className="flex flex-col justify-center items-center font-departure-mono mt-2"
                   onClick={onClickNavigationContainer}
                 >
-                  <a className="p-1 hover:text-accent-light" href="#about_me">
+                  <a
+                    className="p-[6px] hover:text-accent-light"
+                    href="#about_me"
+                  >
                     About me
                   </a>
-                  <a className="p-1 hover:text-accent-light" href="#skills">
+                  <a className="p-[6px] hover:text-accent-light" href="#skills">
                     Skills
                   </a>
-                  <a className="p-1 hover:text-accent-light" href="#work">
+                  <a className="p-[6px] hover:text-accent-light" href="#work">
                     Work
                   </a>
-                  <a className="p-1 hover:text-accent-light" href="#contact_me">
+                  <a
+                    className="p-[6px] hover:text-accent-light"
+                    href="#contact_me"
+                  >
                     Contact
                   </a>
                 </nav>
