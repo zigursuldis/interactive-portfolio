@@ -19,16 +19,16 @@ export default function Home() {
           </h2>
           <Divider />
           <Timeline />
-          <h2 className="text-xl font-departure-mono" id="skills">
-            Skills & technologies
-          </h2>
-          <Divider />
-          <Skills />
           <h2 className="text-xl font-departure-mono" id="work">
             Work (notable projects)
           </h2>
           <Divider />
           <Work />
+          <h2 className="text-xl font-departure-mono" id="skills">
+            Skills & technologies
+          </h2>
+          <Divider />
+          <Skills />
           <h2 className="text-xl font-departure-mono" id="contact_me">
             Contact me
           </h2>
