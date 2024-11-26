@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "project_type": "Service-based, customer-facing business website",
     "company": "Xperience",
     "company_type": "End-to-end delivery",
@@ -21,9 +22,10 @@
       "XM Cloud",
       "Vercel"
     ],
-    "id": "1"
+    "timeframe": "7 months"
   },
   {
+    "id": "2",
     "project_type": "Customer-facing government web application",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
@@ -41,26 +43,28 @@
       "SOLID",
       "Azure"
     ],
-    "id": "2"
+    "timeframe": "4 months"
   },
   {
+    "id": "3",
     "project_type": "Data analysis/analytics (internal)",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
-    "description": "Developed data visualization components (charts, graphs, diagrams) to display large amounts of data (thousands of records) with filtering, focusing on high performance for great UX.",
+    "description": "Developed data visualization components (charts, graphs, diagrams) to display large amounts of data (thousands of records), focusing on high performance for great UX.",
     "skills": [
       "React.js",
       "Redux.js",
       "JavaScript (ES13)",
       "CSS3",
       "HTML5",
-      "Sass",
+      "SCSS",
       "CSS Modules (SCSS)",
       "Azure"
     ],
-    "id": "3"
+    "timeframe": "13 months"
   },
   {
+    "id": "4",
     "project_type": "Project planning web app (internal)",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
@@ -79,6 +83,6 @@
       "CSS Modules (SCSS)",
       "Azure"
     ],
-    "id": "4"
+    "timeframe": "8 months"
   }
 ]

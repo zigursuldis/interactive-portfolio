@@ -15,4 +15,5 @@ export interface WorkItem {
   company_type: string;
   description: string;
   skills: Array<string>;
+  timeframe: string;
 }
