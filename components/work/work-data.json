@@ -47,7 +47,7 @@
   },
   {
     "id": "3",
-    "project_type": "Data analysis/analytics (internal)",
+    "project_type": "Data analysis/analytics web application (internal)",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
     "description": "Developed data visualization components (charts, graphs, diagrams) to display large amounts of data (thousands of records), focusing on high performance for great UX.",
@@ -65,7 +65,7 @@
   },
   {
     "id": "4",
-    "project_type": "Project planning web app (internal)",
+    "project_type": "Project planning web application (internal)",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
     "description": "Developed a high-data (thousands of records) management tool with full CRUD functionality.",

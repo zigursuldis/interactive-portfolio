@@ -13,14 +13,14 @@ export default function WorkItem({ workItem }: WorkItemProps) {
       <div className="flex lg:justify-between flex-col lg:flex-row ">
         <div className="flex lg:items-center flex-col lg:flex-row justify-start ">
           <div className="text-secondary items-center flex-wrap">
-            <div className="inline-flex items-center relative top-[3px]">
+            <div className="inline-flex items-center relative top-1">
               <WorkIcon
                 fill="#FF6F3C"
                 height={20}
                 width={20}
                 className="mr-1"
               />
-              <span className="mr-1">Project type:</span>
+              <span className="mr-1 lg:hidden">Project type:</span>
             </div>
             <span className="text-tertiary ">{workItem.project_type}</span>
           </div>
