@@ -16,13 +16,13 @@ const departureMono = localFont({
 
 export const metadata: Metadata = {
   title: "Uldis Zigurs",
-  description: "Interactive portfolio",
+  description: "Uldis Zigurs website",
   keywords: "Uldis Zigurs, Uldis Žīgurs, frontend developer, portfolio",
   openGraph: {
     type: "website",
     url: "https://uldiszigurs.lv",
-    title: "Uldis Zigurs frontend developer portfolio",
-    description: "Interactive portfolio",
+    title: "Frontend developer Uldis Zigurs",
+    description: "Uldis Zigurs website",
     siteName: "Uldis Zigurs",
   },
 };
