@@ -3,7 +3,7 @@ import SocialMediaLinks from "./social-media-links";
 export default function Banner() {
   return (
     <section className="my-20">
-      <h1 className="text-3xl lg:text-4xl text-accent font-departure-mono [text-shadow:_0_4px_0_#000]">
+      <h1 className="text-3xl lg:text-4xl text-accent font-departure-mono [text-shadow:0_4px_0_#000]">
         Hello, my name is Uldis.
       </h1>
       <h2 className="text-xl lg:text-2xl mt-2">

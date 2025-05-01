@@ -78,7 +78,7 @@ export default function HamburgerMenu() {
                 tabIndex={0}
               >
                 <div className="flex justify-between items-center">
-                  <h1 className="text-md md:text-base text-accent duration-200 text-nowrap font-departure-mono [text-shadow:_0_4px_0_#000] ml-4">
+                  <h1 className="text-md md:text-base text-accent duration-200 text-nowrap font-departure-mono [text-shadow:0_4px_0_#000] ml-4">
                     Uldis Zigurs
                   </h1>
                   <button className="p-1" onClick={() => setIsOpen(false)}>
