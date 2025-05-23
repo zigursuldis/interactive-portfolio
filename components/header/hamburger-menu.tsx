@@ -51,7 +51,7 @@ export default function HamburgerMenu() {
   }, [isOpen]);
 
   return (
-    <div className="relative ml-1 h-8 w-8 flex items-center justify-center">
+    <div className="relative ml-1 h-8 w-8 flex items-center justify-center lg:hidden">
       <button
         onClick={() => setIsOpen((prev) => !prev)}
         className="w-8 h-8 flex items-center justify-center md:hidden"

@@ -2,7 +2,7 @@ import HamburgerMenu from "./hamburger-menu";
 
 export default function Header() {
   return (
-    <header className="h-12 lg:h-[64px] w-full border-b-[1px] border-border-light flex items-center font-departure-mono ">
+    <header className="h-12 lg:h-[64px] w-full border-b border-border-light flex items-center font-departure-mono ">
       <a
         href="."
         className="text-sm md:text-base hover:text-accent-light duration-200 text-nowrap font-departure-mono [text-shadow:0_4px_0_#000]"

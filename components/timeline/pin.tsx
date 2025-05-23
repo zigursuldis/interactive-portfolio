@@ -19,7 +19,7 @@ export default function Pin({ xOffset, activeYear }: PinProps) {
       draggable={false}
     >
       <div className="absolute top-[-5px] left-[-4px] w-[10px] h-[10px] rounded-full bg-accent"></div>
-      <div className="absolute top-[-2rem] left-[-1rem] opacity-75 select-none">
+      <div className="absolute -top-8 -left-4 opacity-75 select-none">
         {activeYear?.year}
       </div>
     </div>

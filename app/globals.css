@@ -1,1 +1,76 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-departure-mono: 'Departure Mono', monospace;
+
+  /* Backgrounds */
+  --color-bg-primary: #282725;
+  --color-bg-secondary: #343330;
+  --color-bg-tertiary: #1F1F1F;
+  --color-bg-quaternary: #141414;
+
+  /* Text */
+  --color-text-primary: #F7F5F1;
+
+  /* Generic colors */
+  --color-primary: #F7F5F1;
+  --color-secondary: #C8C6C4;
+  --color-tertiary: #A6A29E;
+  --color-dark: #1C1C1C;
+
+  /* Neutral */
+  --color-neutral: #8E8E93;
+  --color-neutral-light: #ECE4DB;
+  --color-neutral-dark: #2C2C2E;
+
+  /* Accent */
+  --color-accent: #FF6F3C;
+  --color-accent-light: #FF9A76;
+  --color-accent-dark: #D35400;
+
+  /* Border */
+  --color-border-light: #4A4A4A;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-departure-mono);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+}
+
+@layer utilities {
+  .animate-fall {
+    animation: fall 300ms linear;
+  }
+
+  .animate-slide-in-from-right {
+    animation: slideInFromRight 0.2s ease-out forwards;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
