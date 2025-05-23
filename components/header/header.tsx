@@ -1,10 +1,4 @@
-import dynamic from "next/dynamic";
-
-//this causes layout shift due to only one being CSR
-const HamburgerMenu = dynamic(
-  () => import("@/components/header/hamburger-menu"),
-  { ssr: false }
-);
+import HamburgerMenu from "./hamburger-menu";
 
 export default function Header() {
   return (

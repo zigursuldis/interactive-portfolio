@@ -7,6 +7,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
 const departureMono = localFont({
   src: "./fonts/DepartureMono-Regular.woff2",
   variable: "--font-departure-mono",
