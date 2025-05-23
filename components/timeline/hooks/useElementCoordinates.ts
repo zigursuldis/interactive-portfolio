@@ -1,6 +1,6 @@
 import { RefObject, useEffect, useState } from "react";
 
-export default function useElementCoordinates(ref: RefObject<HTMLElement>) {
+export default function useElementCoordinates(ref: RefObject<HTMLElement | null>) {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0, x2: 0, y2: 0 });
 
   useEffect(() => {

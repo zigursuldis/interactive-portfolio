@@ -3,7 +3,7 @@ import useElementCoordinates from "./useElementCoordinates";
 
 //could refactor this into two separate hooks, as it's super bloaty
 
-export default function usePinDrag(ref: RefObject<HTMLDivElement>) {
+export default function usePinDrag(ref: RefObject<HTMLDivElement | null>) {
   const [xOffset, setXOffset] = useState(0);
   const [isDraggingFromRef, setIsDraggingFromRef] = useState(false);
   const refCoordinates = useElementCoordinates(ref);

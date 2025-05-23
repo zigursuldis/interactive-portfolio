@@ -8,7 +8,7 @@ import usePinClickAndDrag from "./hooks/usePinClickAndDrag";
 import useElementCoordinates from "./hooks/useElementCoordinates";
 
 export default function Timeline() {
-  const yearsContainerRef = useRef(null);
+  const yearsContainerRef = useRef<HTMLDivElement>(null);
   const { xOffset: pinXOffset } = usePinClickAndDrag(yearsContainerRef);
   const refCoordinates = useElementCoordinates(yearsContainerRef);
 
