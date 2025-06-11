@@ -70,7 +70,7 @@ export default function HamburgerMenu() {
             onClick={onClickOverlay}
           >
             <div
-              className="absolute right-0 bg-bg-secondary w-10/12 h-screen animate-slideInFromRight"
+              className="absolute right-0 bg-bg-secondary w-10/12 h-screen animate-slide-in-from-right"
               ref={modalRef}
               tabIndex={0}
             >

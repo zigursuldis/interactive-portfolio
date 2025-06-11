@@ -9,7 +9,7 @@ interface WorkItemProps {
 
 export default function WorkItem({ workItem }: WorkItemProps) {
   return (
-    <div className="flex flex-col max-w-[600px] mt-8 hover:translate-x-1 duration-300">
+    <div className="flex flex-col max-w-[600px] mt-8">
       <div className="flex lg:justify-between flex-col lg:flex-row ">
         <div className="flex lg:items-center flex-col lg:flex-row justify-start ">
           <div className="text-secondary items-center flex-wrap">
