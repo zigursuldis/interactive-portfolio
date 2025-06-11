@@ -69,7 +69,7 @@
     "project_type": "Project planning web application (internal)",
     "company": "Accenture",
     "company_type": "End-to-end delivery",
-    "description": "Developed a high-data (thousands of records) management tool with full CRUD functionality.",
+    "description": "Developed a high-data (thousands of records) management tool with CRUD functionality.",
     "skills": [
       "React.js",
       "TypeScript",
